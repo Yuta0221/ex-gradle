@@ -1,5 +1,7 @@
 package jp.ac.uryukyu.ie.nakasoneyuuta;
 
+//import sun.print.PeekGraphics;
+
 /**
  * ヒーロークラス。
  *  String name; //敵の名前
@@ -9,10 +11,25 @@ package jp.ac.uryukyu.ie.nakasoneyuuta;
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
+
+    public String getName(){
+        return this.name;
+    }
+
+    public int getHitPoint(){
+        return this.hitPoint;
+    }
+
+    public int getAttack(){
+        return this.attack;
+    }
+    public boolean getDead(){
+        return this.dead;
+    }
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -35,7 +52,7 @@ public class Hero {
      */
     public void attack(Enemy e){
         int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.name, damage);
+        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.getName(), damage);
         e.wounded(damage);
     }
 
