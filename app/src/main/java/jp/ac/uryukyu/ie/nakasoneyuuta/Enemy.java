@@ -15,17 +15,33 @@ public class Enemy {
     private boolean dead;
 
     public String getName(){
+        /**
+         * クラス外から敵の名前を取得するためのメソッド
+         * @return name 敵の名前
+         */
         return this.name;
     }
 
     public int getHitPoint(){
+        /**
+         * クラス外から敵のHPを取得するためのメソッド
+         * @return hitPoint 敵のHP
+         */
         return this.hitPoint;
     }
 
     public int getAttack(){
+        /**
+         * クラス外から敵の攻撃力を取得するためのメソッド
+         * @return attack 敵の攻撃力
+         */
         return this.attack;
     }
     public boolean getDead(){
+        /**
+         * クラス外から敵の生死状態を取得するためのメソッド
+         * @return dead 敵の生死状態
+         */
         return this.dead;
     }
     /**

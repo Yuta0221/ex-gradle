@@ -17,17 +17,33 @@ public class Hero {
     private boolean dead;
 
     public String getName(){
+        /**
+         * クラス外からヒーローの名前を取得するためのメソッド
+         * @return name ヒーローの名前
+         */
         return this.name;
     }
 
     public int getHitPoint(){
+        /**
+         * クラス外からヒーローのHPを取得するためのメソッド
+         * @return hitPoint ヒーローのHP
+         */
         return this.hitPoint;
     }
 
     public int getAttack(){
+        /**
+         * クラス外からヒーローの攻撃力を取得するためのメソッド
+         * @return attack ヒーローの攻撃力
+         */
         return this.attack;
     }
     public boolean getDead(){
+        /**
+         * クラス外からヒーローの生死状態を取得するためのメソッド
+         * @return dead ヒーローの生死状態
+         */
         return this.dead;
     }
 
